@@ -24,13 +24,13 @@ const Topbar = () => {
                     {/* Discount info */}
                     <div className="flex flex-col sm:flex-row items-center gap-2.5 text-center sm:text-left">
                         <Image width={16} height={22} src={fire} alt="image" />
-                        <span className={`text-[14px] text-white leading-2.5 ${outfit2.className}`}>Save upto 20% OFF to all premium construction Materials</span>
+                        <span className={`text-[14px] text-white leading-2.5 text-nowrap ${outfit2.className}`}>Save upto 20% OFF to all premium construction Materials</span>
                         <button className={`bg-[#185152] px-3 py-1.75 rounded-[50px] text-white cursor-pointer active:bg-[#134F50] whitespace-nowrap`}>LEARN MORE</button>
                     </div>
                     {/* Address info */}
                     <div className="flex items-center gap-1.75">
                         <FaLocationDot className="text-white" />
-                        <span className={`text-[14px] text-white leading-2.5 ${outfit2.className} hidden lg:block`}>30, Commercial Road Raton, Australia - 47889 45</span>
+                        <span className={`text-[14px] text-white leading-2.5 text-nowrap ${outfit2.className} hidden lg:block`}>30, Commercial Road Raton, Australia - 47889 45</span>
                     </div>
                 </div>
             </div>

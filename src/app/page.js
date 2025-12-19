@@ -1,3 +1,4 @@
+import Banner from '@/components/home/Banner'
 import Navbar from '@/components/home/Navbar'
 import Topbar from '@/components/home/Topbar'
 import React from 'react'
@@ -7,6 +8,7 @@ const page = () => {
     <>
       <Topbar />
       <Navbar />
+      <Banner />
     </>
   )
 }

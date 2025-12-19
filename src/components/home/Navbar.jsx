@@ -19,10 +19,10 @@ const outfit2 = Outfit({
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const navItemCSS = `hover:bg-white hover:text-black hover:border hover:border-[#D9D9D9] text-base leading-[100%] ${outfit.className} border border-[#D9D9D9] text-white bg-transparent py-[9px] px-[20px] rounded-[100px] transition-all duration-300 cursor-pointer`
+    const navItemCSS = `hover:bg-white hover:text-black hover:border hover:border-[#D9D9D9] text-base leading-[100%] ${outfit.className} border border-[#D9D9D9] text-white bg-transparent py-[9px] px-[20px] rounded-[100px] transition-all duration-300 cursor-pointer text-nowrap`
 
     return (
-        <nav className='bg-[#07C29C] rounded-[30px]'>
+        <nav className='rounded-[30px] absolute top-[220px] sm:top-[170px] md:top-[90px] left-0 w-full'>
             <div className="container">
                 <div className='flex items-center gap-3 justify-between py-4 lg:py-0'>
                     {/* Logo */}
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </button>
 
                     {/* Nav items */}
-                    <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row items-center gap-4 lg:gap-8.75 absolute md:relative top-20 lg:top-0 left-0 right-0 bg-[#07C29C] lg:bg-transparent p-6 lg:p-0 rounded-[30px] lg:rounded-none shadow-lg lg:shadow-none z-40`}>
+                    <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row items-center gap-4 lg:gap-8.75 absolute lg:relative top-20 lg:top-0 left-0 right-0 bg-[#07C29C] lg:bg-transparent p-6 lg:p-0 rounded-[30px] lg:rounded-none shadow-lg lg:shadow-none z-40`}>
                         <button className={navItemCSS}>Home</button>
                         <button className={navItemCSS}>About Us</button>
                         <button className={`${navItemCSS} flex items-center gap-1`}>

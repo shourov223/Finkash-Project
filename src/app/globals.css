@@ -3,5 +3,12 @@
 .container {
   max-width: 1569px;
   margin: 0 auto;
-  padding: 10px;
+  padding-inline: 30px;
+}
+
+.banner_img {
+  background: url("../assets/banner_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
