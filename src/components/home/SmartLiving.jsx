@@ -58,7 +58,7 @@ const SmartLiving = () => {
 const List_items = ({ text }) => {
     return (
         <li className="flex items-center gap-3.5">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
                 <Image src={arrow} alt="icon" />
             </div>
             <span className={`${outfit.className} text-base leading-3 font-medium text-[#303030]`}>{text}</span>
