@@ -13,7 +13,7 @@ const outfit2 = Outfit({
 
 const Topbar = () => {
     return (
-        <section className="bg-[#041C28] rounded-[20px] mb-3.5">
+        <section className="bg-[#041C28] rounded-[20px] mb-3.5 py-2">
             <div className="container">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-3 py-2 md:py-0">
                     {/* Email info */}
