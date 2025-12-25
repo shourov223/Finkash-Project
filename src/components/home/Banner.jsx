@@ -16,7 +16,7 @@ const outfit4 = Outfit({
 })
 const Banner = () => {
     return (
-        <section className='banner_img pt-32 md:pt-32.5 pb-16 md:pb-20 lg:pb-25'>
+        <section className='banner_img pt-32 md:pt-32.5 pb-16 md:pb-20 lg:pb-25 rounded-[30px]'>
             <div className="container">
                 <div>
                     <div className={`py-2 px-4 md:px-4.5 bg-[#E5FF5E] text-nowrap rounded-full text-black inline-block font-medium mb-3 md:mb-4 lg:mb-4.5 text-sm md:text-base ${outfit.className}`}>invest in opportunity</div>
