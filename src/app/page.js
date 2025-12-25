@@ -1,5 +1,6 @@
 import Banner from '@/components/home/Banner'
 import Navbar from '@/components/home/Navbar'
+import OurClients from '@/components/home/OurClients'
 import OurService from '@/components/home/OurService'
 import Services from '@/components/home/Services'
 import SmartLiving from '@/components/home/SmartLiving'
@@ -15,6 +16,7 @@ const page = () => {
       <SmartLiving />
       <Services />
       <OurService />
+      <OurClients />
     </>
   )
 }
