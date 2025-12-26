@@ -8,7 +8,6 @@ import rouge from "../../assets/rouge.svg"
 import meximo from "../../assets/meximo.svg"
 import Slider from "react-slick"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 
 
 const outfit = Outfit({
@@ -21,12 +20,6 @@ const outfit3 = Outfit({
     weight: "400"
 })
 const OurClients = () => {
-    const [time, setTime] = useState(0)
-    useEffect(() => {
-        setTimeout(() => {
-            setTime(time + 1)
-        }, 200)
-    }, [time])
     const settings = {
         dots: false,
         infinite: true,
@@ -34,7 +27,7 @@ const OurClients = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: time,
+        autoplaySpeed: 200,
         cssEase: "linear",
         responsive: [
             {
@@ -59,7 +52,7 @@ const OurClients = () => {
     };
     const logos = [extend, katharinip, rawilly, galiche, rouge, meximo]
     return (
-        <section className="px-4 sm:px-6 lg:px-0">
+        <section className="px-4 sm:px-6 lg:px-0 xl:pb-37.5 lg:pb-20 md:pb-12 pb-6">
             <div className="container">
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-2 pb-16 sm:pb-24 lg:pb-32.25">
                     <div>
