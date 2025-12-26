@@ -8,6 +8,8 @@ import rouge from "../../assets/rouge.svg"
 import meximo from "../../assets/meximo.svg"
 import Slider from "react-slick"
 import Image from "next/image"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const outfit = Outfit({
@@ -56,7 +58,7 @@ const OurClients = () => {
             <div className="container">
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-2 pb-16 sm:pb-24 lg:pb-32.25">
                     <div>
-                        <span className={`text-[12px] leading-2 font-medium text-black text-nowrap rounded-full py-2 px-4.5 bg-[#E5FF5E] uppercase ${outfit.className}`}>our clients</span>
+                        <CommonDesign text={"our clients"} />
                         <h2 className={`text-[28px] sm:text-[32px] lg:text-[40px] leading-tight lg:leading-13 font-semibold pt-2.5 ${outfit2.className}`}>trusted by our clients</h2>
                     </div>
                     <p className={`text-[14px] sm:text-base leading-6 sm:leading-7 max-w-full lg:max-w-155.25 ${outfit3.className}`}>Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem. Praesent viverra et metus.</p>
@@ -77,4 +79,7 @@ const OurClients = () => {
     )
 }
 
+export const CommonDesign = ({ text }) => {
+    return <span className={`text-[12px] leading-2 font-medium text-black text-nowrap rounded-full py-2 px-4.5 bg-[#E5FF5E] uppercase ${outfit.className}`}>{text}</span>
+}
 export default OurClients
