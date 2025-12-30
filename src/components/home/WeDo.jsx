@@ -30,14 +30,14 @@ const WeDo = () => {
         prevArrow: <PrevArrow />
     };
     return (
-        <section className='background_image mt-25 py-5 md:py-10 lg:py-5'>
+        <section className='background_image mt-25 py-5 md:py-10'>
             <div className="container px-4 md:px-6 lg:px-8">
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-17'>
                     <div className='w-full lg:w-auto'>
                         <CommonDesign text={"what we do"} />
                         <h2 className={`text-2xl md:text-3xl lg:text-[40px] leading-tight md:leading-snug lg:leading-13 font-semibold text-black pt-2.5 pb-8 md:pb-12 lg:pb-7.5`}>Building a good financial standing for smart futures</h2>
 
-                        <Slider className='w-full lg:w-[450px] relative' {...settings}>
+                        <Slider className='w-full lg:w-112.5 relative' {...settings}>
                             <div className='px-2 md:px-4'>
                                 <ul>
                                     <li className={`text-lg md:text-xl lg:text-[23px] leading-6 md:leading-7 text-black max-w-full lg:max-w-130.75 pb-8 md:pb-12 lg:pb-5 ${outfit.className}`}>Where Financial Secrets Become Opportunity Tangible Success</li>

@@ -26,7 +26,7 @@ const Financial = () => {
                         <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 items-center gap-x-6.5 gap-y-4 md:gap-x-4 md:gap-y-3 sm:gap-x-3 sm:gap-y-2.5 pb-11.75 md:pb-8 sm:pb-6">
                             {
                                 financial_text.map((item, index) => {
-                                    return <span key={index} className={`text-base md:text-sm sm:text-xs text-center leading-2.5 text-nowrap text-black font-semibold uppercase py-3.75 md:py-3 sm:py-2.5 px-6 md:px-4 sm:px-3 rounded-[10px] md:rounded-[8px] sm:rounded-[6px] border border-[#9C9C9C] hover:border-0 hover:bg-linear-to-l from-[#021623] via-[#195353] to-[#021623] hover:text-white transition-all duration-200`}>{item}</span>
+                                    return <span key={index} className={`text-base md:text-sm sm:text-xs text-center leading-2.5 text-nowrap text-black font-semibold uppercase py-3.75 md:py-3 sm:py-2.5 px-6 md:px-4 sm:px-3 rounded-[10px] md:rounded-lg sm:rounded-md border border-[#9C9C9C] hover:border-0 hover:bg-linear-to-l from-[#021623] via-[#195353] to-[#021623] hover:text-white transition-all duration-200`}>{item}</span>
                                 })
                             }
                         </div>
@@ -37,12 +37,7 @@ const Financial = () => {
                             <List_item text={"Half the price twice the deal!"} />
                             <List_item text={"We're a different kind handyman service."} />
                         </div>
-                        <button className="bg-[#021623] rounded-[50px] md:rounded-[40px] sm:rounded-[30px] py-1.75 md:py-1.5 sm:py-1.25 pr-1.75 md:pr-1.5 sm:pr-1.25 pl-4.75 md:pl-4 sm:pl-3 flex items-center gap-3 md:gap-2.5 sm:gap-2 cursor-pointer">
-                            <p className={`text-white font-semibold text-base md:text-sm sm:text-xs leading-3 ${outfit.className}`}>More Details</p>
-                            <div className="size-8.75 md:size-7 sm:size-6 rounded-full bg-white grid place-items-center">
-                                <MdKeyboardArrowRight className="text-black md:text-sm sm:text-xs" />
-                            </div>
-                        </button>
+                        <CommonBtn text={"More Details"} />
                     </div>
                 </div>
             </div>
@@ -53,11 +48,21 @@ const Financial = () => {
 const List_item = ({ text }) => {
     return (
         <li className="list-none flex items-center gap-2.5 md:gap-2 sm:gap-1.5">
-            <div className="size-4 md:size-3.5 sm:size-3 rounded-full bg-[#b4bcbf] relative flex-shrink-0">
+            <div className="size-4 md:size-3.5 sm:size-3 rounded-full bg-[#b4bcbf] relative shrink-0">
                 <span className="size-2 md:size-1.5 sm:size-1.5 rounded-full bg-[#06202B] absolute top-[50%] left-[50%] translate-[-50%]"></span>
             </div>
             <span className={`${outfit2.className} text-[18px] md:text-base sm:text-sm text-[#464646]`}>{text}</span>
         </li>
+    )
+}
+export const CommonBtn = ({ text }) => {
+    return (
+        <button className="bg-[#021623] rounded-[50px] md:rounded-[40px] sm:rounded-[30px] text-nowrap py-1.75 md:py-1.5 sm:py-1.25 pr-1.75 md:pr-1.5 sm:pr-1.25 pl-4.75 md:pl-4 sm:pl-3 flex items-center gap-3 md:gap-2.5 sm:gap-2 cursor-pointer">
+            <p className={`text-white font-semibold text-base md:text-sm sm:text-xs leading-3 ${outfit.className}`}>{text}</p>
+            <div className="size-8.75 md:size-7 sm:size-6 rounded-full bg-white grid place-items-center">
+                <MdKeyboardArrowRight className="text-black md:text-sm sm:text-xs" />
+            </div>
+        </button>
     )
 }
 export default Financial

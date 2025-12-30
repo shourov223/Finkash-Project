@@ -43,7 +43,7 @@ const SmartLiving = () => {
                     <div className="lg:w-88 w-full lg:h-82.25 h-64 object-cover overflow-hidden rounded-[20px]">
                         <Image width={352} height={329} src={section2_image2} alt="image" className="w-full h-full object-cover" />
                     </div>
-                    <div className="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 items-center xl:gap-10 lg:gap-6 gap-4">
+                    <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 items-center xl:gap-10 lg:gap-6 gap-4">
                         <Curcel_item count={<CountUp start={0} end={892} duration={2} />} title={"Complete Projects"} des={"Follows strict safety protocols ensure a secure working"} />
                         <Curcel_item count={<CountUp start={0} end={132} duration={2} />} title={"Team Members"} des={"Promotes sustainable in the construction minimal"} />
                         <Curcel_item count={<CountUp start={0} end={12} duration={2} />} title={"Years of Experiences"} des={"Prioritizes customer follow in satisfaction transparent."} />
