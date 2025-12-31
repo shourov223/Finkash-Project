@@ -25,7 +25,7 @@ const TeamMembers = () => {
     return (
         <section className='py-20 md:py-37.5 bg-[#F6F6F6]'>
             <div className="container">
-                <div className='grid grid-cols-1 lg:grid-cols-[330px_300px_1fr] gap-6 md:gap-26.5 items-start justify-between'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-26.5 items-start justify-between'>
                     <div>
                         <CommonDesign text={"Team members"} />
                         <h3 className={`${outfit.className} text-black font-semibold text-2xl md:text-[40px] leading-8 md:leading-13 pt-3.5`}>Professional financial advisers</h3>

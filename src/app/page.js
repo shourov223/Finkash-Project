@@ -1,8 +1,6 @@
 import Banner from '@/components/home/Banner'
 import ContactUs from '@/components/home/ContactUs'
 import Financial from '@/components/home/Financial'
-import Footer from '@/components/home/Footer'
-import Navbar from '@/components/home/Navbar'
 import News from '@/components/home/News'
 import OurClients from '@/components/home/OurClients'
 import OurService from '@/components/home/OurService'
@@ -17,8 +15,6 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <Topbar />
-      <Navbar />
       <Banner />
       <SmartLiving />
       <Services />
@@ -30,7 +26,6 @@ const page = () => {
       <TeamMembers />
       <News />
       <ContactUs />
-      <Footer />
     </>
   )
 }

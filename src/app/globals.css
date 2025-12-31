@@ -19,3 +19,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.about_banner {
+  background: url("../assets/about_banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

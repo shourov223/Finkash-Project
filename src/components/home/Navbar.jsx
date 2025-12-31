@@ -40,8 +40,8 @@ const Navbar = () => {
 
                     {/* Nav items */}
                     <div className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row items-center gap-4 lg:gap-8.75 absolute lg:relative top-20 lg:top-0 left-0 right-0 bg-[#07C29C] lg:bg-transparent p-6 lg:p-0 rounded-[30px] lg:rounded-none shadow-lg lg:shadow-none z-40`}>
-                        <button className={navItemCSS}>Home</button>
-                        <button className={navItemCSS}>About Us</button>
+                        <Link href={"/"} className={navItemCSS}>Home</Link>
+                        <Link href={"/about"} className={navItemCSS}>About Us</Link>
                         <button className={`${navItemCSS} flex items-center gap-1`}>
                             Projects
                             <RiArrowDropDownLine />
