@@ -61,13 +61,13 @@ const ContactUs = () => {
                             <input className='py-3 md:py-4 px-4 md:px-[22px] border border-[#D8D8D8] rounded-[10px] w-full' type="text" placeholder='Message Here' />
                         </form>
                         <button onClick={handleForm} className="rounded-[50px] flex items-center gap-3 md:gap-4.25 cursor-pointer py-1.5 md:py-1.75 pr-1.5 md:pr-1.75 pl-4 md:pl-5.25 bg-linear-to-l from-[#021623] via-[#195353] to-[#021623] mt-8 md:mt-10">
-                            <p className={`text-white font-semibold text-sm md:text-base leading-3 text-nowrap ${outfit.className}`}>read more</p>
+                            <p className={`text-white font-semibold text-sm md:text-base leading-3 text-nowrap ${outfit.className}`}>Send Messagep</p>
                             <div className="size-7 md:size-8.75 rounded-full grid place-items-center bg-white">
                                 <MdKeyboardArrowRight className="text-[#0A2B33]" />
                             </div>
                         </button>
                     </div>
-                    <div className='w-full'>
+                    <div className='w-full hidden 2xl:block'>
                         <Slider {...settings} className='w-full lg:w-[805px] relative'>
                             <div>
                                 <Image src={form_image} alt='image' className='w-full h-auto' />

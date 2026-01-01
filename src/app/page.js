@@ -10,7 +10,6 @@ import SmartLiving from '@/components/home/SmartLiving'
 import TeamMembers from '@/components/home/TeamMembers'
 import Topbar from '@/components/home/Topbar'
 import WeDo from '@/components/home/WeDo'
-import React from 'react'
 
 const page = () => {
   return (

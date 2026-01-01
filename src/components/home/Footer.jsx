@@ -51,7 +51,7 @@ const Footer = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className='pt-12 md:pt-16 lg:pt-[103px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[373px_1fr_1fr_1fr_1fr] gap-8 md:gap-12 lg:gap-[119px] pb-12 md:pb-16 lg:pb-[101px] border-b border-b-white'>
+                        <div className='pt-12 md:pt-16 lg:pt-[103px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-[373px_1fr_1fr_1fr_1fr] gap-8 md:gap-12 lg:gap-[119px] pb-12 md:pb-16 lg:pb-[101px] border-b border-b-white'>
                             <div className='sm:col-span-2 lg:col-span-1'>
                                 <Image src={"/Logo.png"} alt='image' width={251} height={47} className='w-[180px] md:w-[220px] lg:w-[251px] h-auto' />
                                 <p className={`text-sm md:text-base text-white leading-6 md:leading-7 ${outfit2.className} pt-5 md:pt-[20px] pb-8 md:pb-12 lg:pb-[73px]`}>Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh ornare.From residential homes.</p>
