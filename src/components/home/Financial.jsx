@@ -55,10 +55,10 @@ const List_item = ({ text }) => {
         </li>
     )
 }
-export const CommonBtn = ({ text }) => {
+export const CommonBtn = ({ text, bg = "#021623", textColor = "white" }) => {
     return (
-        <button className="bg-[#021623] rounded-[50px] md:rounded-[40px] h-[50px] sm:rounded-[30px] text-nowrap py-1.75 md:py-1.5 sm:py-1.25 pr-1.75 md:pr-1.5 sm:pr-1.25 pl-4.75 md:pl-4 sm:pl-3 flex items-center gap-3 md:gap-2.5 sm:gap-2 cursor-pointer">
-            <p className={`text-white font-semibold text-base md:text-sm sm:text-xs leading-3 ${outfit.className}`}>{text}</p>
+        <button style={{ backgroundColor: `${bg}` }} className={`rounded-[50px] md:rounded-[40px] h-[50px] sm:rounded-[30px] text-nowrap py-1.75 md:py-1.5 sm:py-1.25 pr-1.75 md:pr-1.5 sm:pr-1.25 pl-4.75 md:pl-4 sm:pl-3 flex items-center gap-3 md:gap-2.5 sm:gap-2 cursor-pointer`}>
+            <p className={`text-[${textColor}] font-semibold text-base md:text-sm sm:text-xs leading-3 ${outfit.className}`}>{text}</p>
             <div className="size-8.75 md:size-7 sm:size-6 rounded-full bg-white grid place-items-center">
                 <MdKeyboardArrowRight className="text-black md:text-sm sm:text-xs" />
             </div>

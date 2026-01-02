@@ -13,6 +13,7 @@ import service_six from "../../assets/service_six.jpg"
 import service_seven from "../../assets/service_seven.jpg"
 import service_eight from "../../assets/service_eight.jpg"
 import service_nine from "../../assets/service_nine.jpg"
+import Link from 'next/link'
 
 const outfit = Outfit({
     weight: "500"
@@ -86,6 +87,7 @@ const SocialFinancial = () => {
                         <CommonBtn text={"View All Services"} />
                     </div>
                 </div>
+
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-[67px]'>
                     {
                         serviceArray.map((item, index) => {
@@ -100,7 +102,7 @@ const SocialFinancial = () => {
 
 const SocialCard = ({ img, title, text }) => {
     return (
-        <div className='p-[15px] md:p-[18px] lg:p-[20px] bg-[#F3F3F3] rounded-[20px] md:rounded-[25px] lg:rounded-[30px] group hover:bg-[#041C28] transition-all duration-200 max-w-full lg:max-w-[495px] max-h-none lg:max-h-[620px]'>
+        <Link href={"/serviceDetails"} className='p-[15px] md:p-[18px] lg:p-[20px] bg-[#F3F3F3] rounded-[20px] md:rounded-[25px] lg:rounded-[30px] group hover:bg-[#041C28] transition-all duration-200 max-w-full lg:max-w-[495px] max-h-none lg:max-h-[620px]'>
             <div className='rounded-[20px] md:rounded-[25px] lg:rounded-[30px] overflow-hidden'>
                 <Image src={img} alt='image' className='w-full h-auto' />
             </div>
@@ -111,10 +113,10 @@ const SocialCard = ({ img, title, text }) => {
                     <IoIosArrowForward color='white' />
                 </button>
                 <div className='hidden group-hover:grid place-items-center'>
-                    <CommonBtn text={"Read More"} />
+                    <CommonBtn bg='#ffffff' textColor='#041C28' text={"Read More"} />
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 export default SocialFinancial
