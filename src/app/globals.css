@@ -39,7 +39,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 270px;
-  padding-bottom: 202px;
-  border-radius: 30px;
+}
+
+.ourTeamBaner {
+  background: url("../assets/ourteamBanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourBlog {
+  background: url("../assets/blog_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
     const navItemCSS = `hover:bg-white hover:text-black hover:border hover:border-[#D9D9D9] text-base leading-[100%] ${outfit.className} border border-[#D9D9D9] text-white bg-transparent py-[9px] px-[20px] rounded-[100px] transition-all duration-300 cursor-pointer text-nowrap`
 
     return (
-        <nav className='rounded-[30px] absolute top-[220px] sm:top-[170px] md:top-[90px] left-0 w-full'>
+        <nav className='rounded-[30px] absolute top-[220px] sm:top-[170px] md:top-[90px] left-0 w-full z-10'>
             <div className="container">
                 <div className='flex items-center gap-3 justify-between py-4 lg:py-0'>
                     {/* Logo */}
@@ -46,7 +46,7 @@ const Navbar = () => {
                             Projects
                             <RiArrowDropDownLine />
                         </button>
-                        <button className={navItemCSS}>Blogs</button>
+                        <Link href={"/blogs"} className={navItemCSS}>Blogs</Link>
                         <button className={`${navItemCSS} flex items-center gap-1`}>
                             Pages
                             <RiArrowDropDownLine />

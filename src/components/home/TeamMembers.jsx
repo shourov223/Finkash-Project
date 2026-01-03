@@ -46,10 +46,10 @@ const TeamMembers = () => {
     )
 }
 
-const MemberCard = ({ img, text, title, des }) => {
+export const MemberCard = ({ img, text, title, des }) => {
     const socialIcons = [<FaInstagram />, <FaFacebookF />, <FaYoutube />, <AiOutlineTwitter />]
     return (
-        <div className="w-full mx-auto h-auto md:h-113.5 px-2.25 pt-2.25 pb-10 rounded-[30px] bg-white group relative transition-all duration-200 hover:border hover:border-black">
+        <div className="w-full mx-auto h-auto md:h-113.5 px-2.25 pt-2.25 pb-10 rounded-[30px] bg-[#F6F6F6] group relative transition-all duration-200 hover:border hover:border-black">
             <div className='w-full h-64 md:h-83 group-hover:h-full rounded-[30px] overflow-hidden'>
                 <Image className='object-cover w-full h-full' src={img} alt='image' />
             </div>

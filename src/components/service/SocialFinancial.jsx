@@ -76,18 +76,9 @@ const SocialFinancial = () => {
     ]
     return (
         <section className='py-[60px] md:py-[100px] lg:py-[150px]'>
-            <div className="container px-4 md:px-6 lg:px-8">
-                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-[589px_623px_195px] gap-6 md:gap-10 lg:gap-[90px] mb-10 md:mb-16 lg:mb-20'>
-                    <div>
-                        <CommonDesign text={"Social financial redefined"} />
-                        <h2 className={`text-[#041C28] font-semibold text-[28px] md:text-[34px] lg:text-[40px] leading-[36px] md:leading-[44px] lg:leading-[52px] pt-2.25 ${outfit2.className}`}>Where financial secrets become opportunities</h2>
-                    </div>
-                    <p className={`text-[#4D4D4D] text-sm md:text-[15px] lg:text-base leading-6 md:leading-[26px] lg:leading-7 ${outfit3.className}`}>Phasellus vehicula lectus non euismod congue. Vestibulum libero purus, rhoncus vitae sem at, interdum dictum arcu. Vivamus lacinia congue porttitor.</p>
-                    <div className='md:col-span-2 lg:col-span-1 flex md:justify-start'>
-                        <CommonBtn text={"View All Services"} />
-                    </div>
-                </div>
-
+            <div className="container">
+                {/*  */}
+                <CommonHeading title={"Where financial secrets become opportunities"} designText={"Social financial redefined"} des={"Phasellus vehicula lectus non euismod congue. Vestibulum libero purus, rhoncus vitae sem at, interdum dictum arcu. Vivamus lacinia congue porttitor."} btnText={"View All Services"} />
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-[67px]'>
                     {
                         serviceArray.map((item, index) => {
@@ -117,6 +108,24 @@ const SocialCard = ({ img, title, text }) => {
                 </div>
             </div>
         </Link>
+    )
+}
+export const CommonHeading = ({ designText, title, des, btnText, showBtn = true }) => {
+    return (
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-[589px_623px_195px] gap-6 md:gap-10 lg:gap-[90px] mb-10 md:mb-16 lg:mb-20'>
+            <div>
+                <CommonDesign text={designText} />
+                <h2 className={`text-[#041C28] font-semibold text-[28px] md:text-[34px] lg:text-[40px] leading-[36px] md:leading-[44px] lg:leading-[52px] pt-2.25 ${outfit2.className}`}>{title}</h2>
+            </div>
+            <p className={`text-[#4D4D4D] text-sm md:text-[15px] lg:text-base leading-6 md:leading-[26px] lg:leading-7 ${outfit3.className}`}>{des}</p>
+            {
+                showBtn && (
+                    <div className='md:col-span-2 lg:col-span-1 flex md:justify-start'>
+                        <CommonBtn text={btnText} />
+                    </div>
+                )
+            }
+        </div>
     )
 }
 export default SocialFinancial
