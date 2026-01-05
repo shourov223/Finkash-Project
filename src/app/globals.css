@@ -54,3 +54,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.blogDetailsBanner {
+  background: url("./../assets/blogDetailsBanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
