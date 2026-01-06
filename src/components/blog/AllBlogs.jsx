@@ -12,6 +12,7 @@ import service_nine from "../../assets/service_nine.jpg"
 import Image from 'next/image'
 import { Outfit } from 'next/font/google'
 import { CommonBtn } from '../home/Financial'
+import Link from 'next/link'
 
 const outfit = Outfit({
     weight: ["400", "500", "600", "700"]
@@ -94,7 +95,7 @@ const AllBlogs = () => {
 }
 const BlogCard = ({ image, title, des, date }) => {
     return (
-        <div className='max-w-[513px] w-full mx-auto'>
+        <Link href={"/blogDetails"} className='max-w-[513px] w-full mx-auto'>
             <div className='rounded-[20px] overflow-hidden w-full h-[250px] sm:h-[300px] lg:h-[342px]'>
                 <Image className='w-full h-full object-cover' src={image} alt='image' />
             </div>
@@ -104,7 +105,7 @@ const BlogCard = ({ image, title, des, date }) => {
                 <p className='text-[14px] sm:text-[15px] lg:text-base text-[#585858] leading-6 sm:leading-[26px] lg:leading-7 pb-[24px] sm:pb-[30px] lg:pb-[34px]'>{des}</p>
                 <CommonBtn text={"read more"} bg='#1C282F' textColor='#FFFFFF' />
             </div>
-        </div>
+        </Link>
     )
 }
 export default AllBlogs

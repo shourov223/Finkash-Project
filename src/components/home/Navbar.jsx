@@ -51,7 +51,7 @@ const Navbar = () => {
                             Pages
                             <RiArrowDropDownLine />
                         </button>
-                        <button className={navItemCSS}>Contact Us</button>
+                        <Link href={"/contact"} className={navItemCSS}>Contact Us</Link>
                     </div>
 
                     {/* Contact Info */}
