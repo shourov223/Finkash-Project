@@ -20,11 +20,11 @@ const outfit = Outfit({
     weight: ["400", "500", "600", "700"],
     display: 'swap'
 })
+export const emailRejax = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+export const phnNumberRejax = /^(?:\+880|880|0)1[3-9]\d{8}$/
 const Details = () => {
     const listText = ["Elevate Your Space with Our  Electrical Solutions", "Embracing Sophistication, Lighting Dreams Experience.", "Class and Reliability, Choose Us Transforming Spaces.", "Classy Electrical Design Excellence Transcends.", "Trends the Epitome of Class in Every Circuit Ageless.", "Craftsmanship for the Classy Clientele A Symphony."]
 
-    const emailRejax = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    const phnNumberRejax = /^(?:\+880|880|0)1[3-9]\d{8}$/
     const [email, setEmail] = useState("")
     const [phnNUmber, setPhnNUmber] = useState("")
     const handleButton = () => {

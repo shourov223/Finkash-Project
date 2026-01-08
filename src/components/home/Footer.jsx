@@ -9,6 +9,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { IoMdCall } from 'react-icons/io'
 import { IoMailUnreadSharp } from 'react-icons/io5'
 import { TbWorld } from "react-icons/tb";
+import { useRouter } from 'next/navigation'
 
 const outfit = Outfit({
     weight: "600"
@@ -82,30 +83,30 @@ const Footer = () => {
                             </ul>
                             <ul>
                                 <ListHeading text={"Company"} />
-                                <LIstItem item={"About"} />
-                                <LIstItem item={"Plans"} />
-                                <LIstItem item={"Services"} />
-                                <LIstItem item={"Products"} />
-                                <LIstItem item={"Privacy Policy"} />
-                                <LIstItem item={"Terms of use"} />
+                                <LIstItem to={"/about"} item={"About"} />
+                                <LIstItem to={"/"} item={"Plans"} />
+                                <LIstItem to={"services"} item={"Services"} />
+                                <LIstItem to={"/"} item={"Products"} />
+                                <LIstItem to={"/"} item={"Privacy Policy"} />
+                                <LIstItem to={"/"} item={"Terms of use"} />
                             </ul>
                             <ul>
                                 <ListHeading text={"Help & Support"} />
-                                <LIstItem item={"Support"} />
-                                <LIstItem item={"Locate us"} />
-                                <LIstItem item={"Booking"} />
-                                <LIstItem item={"Contact Us"} />
-                                <LIstItem item={"Login"} />
-                                <LIstItem item={"FAQ"} />
+                                <LIstItem to={"/"} item={"Support"} />
+                                <LIstItem to={"/"} item={"Locate us"} />
+                                <LIstItem to={"/"} item={"Booking"} />
+                                <LIstItem to={"contact"} item={"Contact Us"} />
+                                <LIstItem to={"login"} item={"Login"} />
+                                <LIstItem to={"/"} item={"FAQ"} />
                             </ul>
                             <ul>
                                 <ListHeading text={"Services Cities"} />
-                                <LIstItem item={"New York"} />
-                                <LIstItem item={"Los Angeles"} />
-                                <LIstItem item={"Chicago"} />
-                                <LIstItem item={"London"} />
-                                <LIstItem item={"Houston"} />
-                                <LIstItem item={"Washington"} />
+                                <LIstItem to={"/"} item={"New York"} />
+                                <LIstItem to={"/"} item={"Los Angeles"} />
+                                <LIstItem to={"/"} item={"Chicago"} />
+                                <LIstItem to={"/"} item={"London"} />
+                                <LIstItem to={"/"} item={"Houston"} />
+                                <LIstItem to={"/"} item={"Washington"} />
                             </ul>
                         </div>
                     </div>
@@ -120,7 +121,8 @@ const Footer = () => {
 const ListHeading = ({ text }) => {
     return <li className={`text-white font-medium text-lg md:text-xl lg:text-[25px] leading-tight md:leading-[33px] text-nowrap pb-5 md:pb-6 lg:pb-8 ${outfit3.className}`}>{text}</li>
 }
-const LIstItem = ({ item }) => {
-    return <li className={`text-sm md:text-base text-white leading-6 md:leading-7 pb-3 max-w-full md:max-w-[192px] ${outfit2.className}`}>{item}</li>
+const LIstItem = ({ item, to }) => {
+    const router = useRouter()
+    return <li onClick={() => router.push(to)} className={`cursor-pointer text-sm md:text-base text-white leading-6 md:leading-7 pb-3 max-w-full md:max-w-[192px] ${outfit2.className}`}>{item}</li>
 }
 export default Footer

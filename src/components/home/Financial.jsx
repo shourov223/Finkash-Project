@@ -3,6 +3,7 @@ import section2_image2 from "../../assets/section2_image2.jpg"
 import { CommonDesign } from "./OurClients"
 import { Outfit } from "next/font/google"
 import { MdKeyboardArrowRight } from "react-icons/md"
+import Link from "next/link"
 
 const outfit = Outfit({
     weight: "600"

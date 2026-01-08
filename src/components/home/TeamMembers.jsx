@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { CommonDesign } from './OurClients'
 import { Outfit } from 'next/font/google'
@@ -10,6 +11,7 @@ import person_four from "../../assets/person_four.jpg"
 import { MdOutlineArrowOutward } from 'react-icons/md'
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa6'
 import { AiOutlineTwitter } from "react-icons/ai";
+import { useRouter } from 'next/navigation'
 
 const outfit = Outfit({
     weight: "600"
@@ -22,6 +24,10 @@ const outfit3 = Outfit({
 })
 
 const TeamMembers = () => {
+    const router = useRouter()
+    const handleEvent = () => {
+        router.push("/ourTeam")
+    }
     return (
         <section className='py-20 md:py-37.5 bg-[#F6F6F6]'>
             <div className="container">
@@ -32,21 +38,21 @@ const TeamMembers = () => {
                     </div>
                     <p className={`text-[#424242] text-sm md:text-base leading-6 md:leading-7 ${outfit2.className}`}>Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem.</p>
                     <div className='w-full lg:w-auto'>
-                        <CommonBtn text={"View All Team"} />
+                        <CommonBtn event={handleEvent} text={"View All Team"} />
                     </div>
                 </div>
                 <div className='pt-12 md:pt-22.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-6 md:gap-10'>
-                    <MemberCard img={person_one} text={"finkash advisers"} title={"Arnav Gillespie"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
-                    <MemberCard img={person_two} text={"finkash advisers"} title={"Edward Richardson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
-                    <MemberCard img={person_three} text={"finkash advisers"} title={"Leslie Gibson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
-                    <MemberCard img={person_four} text={"finkash advisers"} title={"Zak Thompson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
+                    <MemberCard router={router} img={person_one} text={"finkash advisers"} title={"Arnav Gillespie"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
+                    <MemberCard router={router} img={person_two} text={"finkash advisers"} title={"Edward Richardson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
+                    <MemberCard router={router} img={person_three} text={"finkash advisers"} title={"Leslie Gibson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
+                    <MemberCard router={router} img={person_four} text={"finkash advisers"} title={"Zak Thompson"} des={"Donec molestie lacus vel massa malesuada, vitae accumsan nunc malesuada. Donec sed convallis nibh. Vivamus interdum pulvinar sem."} />
                 </div>
             </div>
         </section>
     )
 }
 
-export const MemberCard = ({ img, text, title, des }) => {
+export const MemberCard = ({ img, text, title, des, router }) => {
     const socialIcons = [<FaInstagram />, <FaFacebookF />, <FaYoutube />, <AiOutlineTwitter />]
     return (
         <div className="w-full mx-auto h-auto md:h-113.5 px-2.25 pt-2.25 pb-10 rounded-[30px] bg-[#F6F6F6] group relative transition-all duration-200 hover:border hover:border-black">
@@ -77,7 +83,7 @@ export const MemberCard = ({ img, text, title, des }) => {
                         })
                     }
                 </div>
-                <button className='size-12 md:size-13.5 bg-[#E5FF5E] rounded-full grid place-items-center mx-auto mt-6.5'>
+                <button onClick={() => router.push("/ourTeam")} className='cursor-pointer size-12 md:size-13.5 bg-[#E5FF5E] rounded-full grid place-items-center mx-auto mt-6.5'>
                     <MdOutlineArrowOutward className='text-black' />
                 </button>
             </div>

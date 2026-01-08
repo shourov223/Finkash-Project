@@ -62,12 +62,12 @@ const Navbar = () => {
                             </div>
                             <span className={`text-white text-base ${outfit.className}`}>(+02) 258 987 4533</span>
                         </div>
-                        <button className='py-1.75 pr-1.75 pl-4.75 bg-[#E5FF5E] rounded-full cursor-pointer flex items-center gap-1.75'>
+                        <Link href={"/login"} className='py-1.75 pr-1.75 pl-4.75 bg-[#E5FF5E] rounded-full cursor-pointer flex items-center gap-1.75'>
                             <span className={`${outfit2.className} text-[#04150B] text-sm lg:text-base`}>get in touch</span>
                             <div className='size-8.75 rounded-full bg-[#04150B] grid place-items-center'>
                                 <FaChevronRight className='text-[#E6D2AF]' />
                             </div>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

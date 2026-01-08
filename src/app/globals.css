@@ -68,3 +68,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.loginBannerImage {
+  background: url("../assets/login_bannerImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
