@@ -97,7 +97,7 @@ const Footer = () => {
                                 <LIstItem to={"/"} item={"Booking"} />
                                 <LIstItem to={"contact"} item={"Contact Us"} />
                                 <LIstItem to={"login"} item={"Login"} />
-                                <LIstItem to={"/"} item={"FAQ"} />
+                                <LIstItem to={"/faq"} item={"FAQ"} />
                             </ul>
                             <ul>
                                 <ListHeading text={"Services Cities"} />

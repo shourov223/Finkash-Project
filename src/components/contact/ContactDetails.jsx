@@ -13,7 +13,7 @@ import branches from "../../assets/branches.svg"
 import offers from "../../assets/offers.svg"
 import shipping from "../../assets/shipping.svg"
 
-const outfit = Outfit({
+export const outfit = Outfit({
     weight: ["400", "500", "600", "700"]
 })
 

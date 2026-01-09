@@ -89,3 +89,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.faqBannerImage {
+  background: url("../assets/faqBannerImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
