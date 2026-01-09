@@ -75,3 +75,17 @@
   background-position: center;
   background-size: cover;
 }
+
+.pricingPlanBanner {
+  background: url("../assets/pricing_plan.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conditionBannerImage {
+  background: url("../assets/conditionBanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

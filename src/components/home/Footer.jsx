@@ -84,11 +84,11 @@ const Footer = () => {
                             <ul>
                                 <ListHeading text={"Company"} />
                                 <LIstItem to={"/about"} item={"About"} />
-                                <LIstItem to={"/"} item={"Plans"} />
+                                <LIstItem to={"/pricing"} item={"Plans"} />
                                 <LIstItem to={"services"} item={"Services"} />
-                                <LIstItem to={"/"} item={"Products"} />
-                                <LIstItem to={"/"} item={"Privacy Policy"} />
-                                <LIstItem to={"/"} item={"Terms of use"} />
+                                <LIstItem to={"/pricing"} item={"Products"} />
+                                <LIstItem to={"/condition"} item={"Privacy Policy"} />
+                                <LIstItem to={"/condition"} item={"Terms of use"} />
                             </ul>
                             <ul>
                                 <ListHeading text={"Help & Support"} />

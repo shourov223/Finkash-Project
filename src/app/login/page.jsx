@@ -67,7 +67,7 @@ const page = () => {
                         </form>
                     </div>
                 </div>
-                <Toaster position='top-right'/>
+                <Toaster position='top-right' />
             </section>
         </>
     )
