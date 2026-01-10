@@ -47,7 +47,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section className='bg-[#F1F1F1] py-[150px]'>
+        <section className='bg-[#F1F1F1] py-[60px] lg:py-[150px]'>
             <div className="container">
                 <div className='grid grid-cols-1 lg:grid-cols-[662px_1fr] items-center gap-8 lg:gap-[53px]'>
                     <div>

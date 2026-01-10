@@ -19,9 +19,9 @@ const outfit3 = Outfit({
 
 const SmartLiving = () => {
     return (
-        <section className="pt-37.5 md:pt-20 sm:pt-10">
+        <section className="pt-10 lg:pt-37.5 md:pt-20 sm:pt-10">
             <div className="container">
-                <div className="grid xl:grid-cols-[1fr_596px] lg:grid-cols-1 items-center xl:gap-17.5 lg:gap-10 gap-8 pb-40 lg:pb-20 sm:pb-10">
+                <div className="grid xl:grid-cols-[1fr_596px] lg:grid-cols-1 items-center xl:gap-17.5 lg:gap-10 gap-8 xl:pb-40 lg:pb-20 pb-10">
                     <div>
                         <div className={`py-2 px-3.75 text-nowrap text-black text-[12px] leading-2 rounded-full bg-[#E5FF5E] mb-4.5 inline-block ${outfit.className}`}>saving your future</div>
                         <h2 className={`xl:text-[40px] lg:text-[32px] md:text-[28px] text-[24px] leading-13 lg:leading-tight text-[#041C28] font-semibold ${outfit2.className} pb-10.5 md:pb-6 sm:pb-4`}>Built for Families, Made for Memories Smart Homes for Smart Living</h2>

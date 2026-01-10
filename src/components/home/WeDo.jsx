@@ -30,7 +30,7 @@ const WeDo = () => {
         prevArrow: <PrevArrow />
     };
     return (
-        <section className='background_image mt-25 py-5 md:py-10'>
+        <section className='background_image mt-10 lg:mt-25 py-5 md:py-10'>
             <div className="container px-4 md:px-6 lg:px-8">
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-17'>
                     <div className='w-full lg:w-auto'>

@@ -24,9 +24,9 @@ const FaqDetails = () => {
         "Economic Physicals Are What We Do Free Financial For All?"
     ]
     return (
-        <section className={`py-[150px] ${outfit.className}`}>
+        <section className={`py-20 xl:py-[150px] ${outfit.className}`}>
             <div className="container">
-                <div className='grid grid-cols-2 gap-[170px]'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 xl:gap-[170px]'>
                     <div>
                         <CommonDesign text={"frequently asked questions"} />
                         <h1 className='text-[#041C28] text-[40px] leading-[52px] font-semibold pt-3 pb-[22px]'>People Frequently Asking Question</h1>

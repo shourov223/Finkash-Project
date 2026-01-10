@@ -1,9 +1,10 @@
+"use client"
 import Image from "next/image"
 import section2_image2 from "../../assets/section2_image2.jpg"
 import { CommonDesign } from "./OurClients"
 import { Outfit } from "next/font/google"
 import { MdKeyboardArrowRight } from "react-icons/md"
-import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 const outfit = Outfit({
     weight: "600"
@@ -14,6 +15,10 @@ const outfit2 = Outfit({
 
 const Financial = () => {
     const financial_text = ["Banking", "Insurance", "Mutual Funds", "Stock Market", "Audit Consulting", "Restructuring"]
+    const router = useRouter()
+    const handleEvent = () => {
+        router.push("/service")
+    }
     return (
         <section className="xl:pt-37.5 md:pt-20 pt-12">
             <div className="container">
@@ -38,7 +43,7 @@ const Financial = () => {
                             <List_item text={"Half the price twice the deal!"} />
                             <List_item text={"We're a different kind handyman service."} />
                         </div>
-                        <CommonBtn textColor="#ffffff" text={"More Details"} />
+                        <CommonBtn event={handleEvent} textColor="#ffffff" text={"More Details"} />
                     </div>
                 </div>
             </div>
